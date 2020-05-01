@@ -1,6 +1,6 @@
 # 0) Read data 
 
-This will check if the datafile is in the wd and or if it has to be downloaded. Once the datafile is in the wd, the tables are loaded:
+This will check if the datafile is in the wd or if it has to be downloaded. Once the datafile is in the wd, the tables are loaded:
 
 X_test: values for the "test" variables.
 subject_test: Id's of the "test" subjects.
