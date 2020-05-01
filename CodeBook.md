@@ -1,6 +1,4 @@
----
-title: "run_analysis" CODE BOOK
----
+
 #0) Read data 
 
 This will check if the datafile is in the wd and or if it has to be downloaded. Once the datafile is in the wd, the tables are loaded:
