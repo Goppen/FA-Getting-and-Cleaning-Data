@@ -17,8 +17,11 @@ features: describes variables in X_test and X_train.
 Merge the different tables into one data set. 
 
 datasetx: binds X_train with X_test by the rows.
+
 datasety: binds y_train with y_test by the rows.
+
 subject:  binds subject_train with subject_test by the rows.
+
 DataSet1: binds the previosly created data sets: subject, datasety, datasetx (in that order) by the columns. Finally creating
 one data set.
 
