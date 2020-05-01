@@ -72,11 +72,12 @@ DataSet2[,2] <- activity
 names(DataSet2)[1] <- "subject"
 names(DataSet2)[2] <- "activity"
 names(DataSet2)[3:ncol(DataSet2)]<- as.character(features[MeanandStd,2])
-
+#Result:
+#DataSet2
 #5 - Melt data to four column and cast the means. 
 
 library(reshape2)
 SecondData1 <- melt(DataSet2,(id.vars=c("subject","activity")))
 SecondData2<-dcast(SecondData1, subject + activity ~ variable, mean )
 #Result:
-SecondData2
+#SecondData2
