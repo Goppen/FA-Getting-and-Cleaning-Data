@@ -80,4 +80,4 @@ library(reshape2)
 SecondData1 <- melt(DataSet2,(id.vars=c("subject","activity")))
 SecondData2<-dcast(SecondData1, subject + activity ~ variable, mean )
 #Result:
-#SecondData2
+write.table(SecondData2, "tidydata.txt", row.name = FALSE)
