@@ -19,7 +19,7 @@ Merge the different tables into one data set.
 datasetx: binds X_train with X_test by the rows.
 datasety: binds y_train with y_test by the rows.
 subject:  binds subject_train with subject_test by the rows.
-DataSet1: binds the previosly created data set: subject, datasety, datasetx (in that order) by the columns. Finally creating
+DataSet1: binds the previosly created data sets: subject, datasety, datasetx (in that order) by the columns. Finally creating
 one data set.
 
 # 2) Identify and keep only the variables mean() and std().
@@ -28,13 +28,13 @@ one data set.
 MeanandStd: Identifies the location of the mean and std variables in the "features" table.
 DSmeanstd:  Since the feature file is for the "X" tables, all values have to be shifted by two, in order to match
 the position in DataSet1.
-DataSet2: New data set with only the mean and std variable.
+DataSet2: New data set with only the mean and std variables.
 
 # 3) Changes numeric into descriptive values.
 
 The second column has numeric values referring to the activities.
 
-Firts the values were changed into factors:
+First the values were changed into factors.
 
 activity: contains the activities column as factors.
 
@@ -55,6 +55,6 @@ Columns 3+: After their corresponding variable name in the "features" data set.
 
 This is an independent tidy data set. "It has the average of each variable for each activity and each subject".
 
-SecondData1: Stores the result of the melt of the Dataset2 with the id.vars of subject and activity.
+SecondData1: Stores the result of melt on the Dataset2 with the id.vars of subject and activity.
 SecondData2: Stores the result of casting on subject and activity the mean of the variable column.
 SecondData2: Contains the second data set.
