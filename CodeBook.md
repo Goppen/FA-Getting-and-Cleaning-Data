@@ -29,8 +29,10 @@ one data set.
 
 
 MeanandStd: Identifies the location of the mean and std variables in the "features" table.
+
 DSmeanstd:  Since the feature file is for the "X" tables, all values have to be shifted by two, in order to match
 the position in DataSet1.
+
 DataSet2: New data set with only the mean and std variables.
 
 # 3) Changes numeric into descriptive values.
@@ -51,7 +53,9 @@ DataSet2: Now contains the values of the activity variable as descriptive factor
 This step will assign names to all columns of DataSet2.
 
 Column 1: Is renamed as "subject"
+
 Column 2: Is renamed as "activity" 
+
 Columns 3+: After their corresponding variable name in the "features" data set. 
 
 # 5) Second data set
@@ -59,5 +63,7 @@ Columns 3+: After their corresponding variable name in the "features" data set.
 This is an independent tidy data set. "It has the average of each variable for each activity and each subject".
 
 SecondData1: Stores the result of melt on the Dataset2 with the id.vars of subject and activity.
+
 SecondData2: Stores the result of casting on subject and activity the mean of the variable column.
+
 SecondData2: Contains the second data set.
